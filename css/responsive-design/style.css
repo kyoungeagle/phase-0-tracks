@@ -1,9 +1,9 @@
 body {
-  width: 960px;
+  max-width: 960 px; 
 }
 
 main { 
-  width: 756px;
+  width: 70%;
   vertical-align: top;
   display: inline-block;
  }
@@ -25,9 +25,13 @@ cite {
 }
 
 #external-links {
-  width: 200px;
+ width: 20%;
+ min-width: 225px;
  vertical-align: top;
  display: inline-block;
+ padding-right: 10px;
+
+
 }
 
 
