@@ -38,7 +38,13 @@ img {
     margin-top: 160px;
     position: fixed;
     z-index: 20;
-    }    
+    }  
+    
+#glasses{
+	width: 150px;
+	padding-top: 10px;
+	padding-left: 25px;
+}  
 
 
 
