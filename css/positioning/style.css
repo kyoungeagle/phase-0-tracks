@@ -17,12 +17,11 @@ img {
 }
 .hat {
 	margin: 100px;
-	margin-left: -300px;
+	margin-left: 390px;
     margin-right: 20px;
     margin-bottom: 0px;
-    margin-top: 40px;
-    position: relative;
-    float: center;
+    margin-top: 25px;
+    position: fixed;
     z-index: 10
     }
 .Octopus {
@@ -30,18 +29,18 @@ img {
 	margin-left: 380px;
     margin-right: 20px;
     margin-bottom: 0px;
-    margin-top: -210px;
+    margin-top: 80px;
     position: fixed;
     z-index: 5;
     }
 .glasses {
 	margin: 10px;
-	margin-left: -320px;
+	margin-left: 385px;
     margin-right: 20px;
     margin-bottom: 0px;
-    margin-top: 40px;
-    position: relative;
-    z-index: 10;
+    margin-top: 160px;
+    position: fixed;
+    z-index: 20;
     }    
 
 
