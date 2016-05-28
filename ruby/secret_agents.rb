@@ -23,7 +23,7 @@ while counter < length
 	counter += 1
 end
 end
-encrypt("zed")
+
 
 
 def decrypt (str)
@@ -41,7 +41,6 @@ def decrypt (str)
  end
 end
 
-decrypt("zed")
 
 # Release 5
 
