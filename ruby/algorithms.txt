@@ -1,0 +1,30 @@
+#Robot Using an Elevator
+
+#1. Navigate in front of the elevator doors
+#2. Extend one arm
+#3. Press ascend (up) button
+#4. Wait for elevator doors to open
+#5. Once elevator doors are open, navigate into elevator
+#6. Turn left 180 degrees
+#7. Extend one arm
+#8. Decide which floor to ascend to
+#9. Press floor number that corresponds to whichever floor was decided upon in step #8
+#10. Remain idle as elevator doors close
+#11. Remain idle as elevator shaft ascends to chosen floor
+#12. Wait for elevator doors to open
+#13. Exit the elevator through the elevator doors
+
+
+
+# How to Make Coffee
+
+#1. Organize coffee pot, water, mug, coffee, sugar, and milk on counter.
+#2. Place 2 tablespoons of coffee into coffee filter for every 6 oz of water you will use.
+#3. Pour determined number of ounces of water into coffee machine
+#4. Get a mug
+#5. Wait for water to filter through coffee maker into coffee pot.
+#6. Pour coffee into mug
+#7. Add sugar (?)
+#8. Add milk (?)
+#9. Stir
+#10. Ready to drink
