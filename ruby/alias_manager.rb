@@ -62,4 +62,22 @@ def next_char (x)
 	end
 end
 
-	
+	array1.map! {|x| next_char(x) }
+	array2.map! {|x| next_char(x) }
+
+#make arrays a string and capitalize the first letter of each string
+
+	first_name_join = array1.join('').capitalize
+	last_name_join = array2.join('').capitalize
+
+		spy_name = first_name_join + ' ' + last_name_join
+		if spy_name == "Raou Raou"
+			puts "Here is your summary of spy names:"
+		else
+			puts "Your spy name is #{spy_name}."
+			agent_name_list.store(agent_name, spy_name)
+	end
+
+end
+
+agent_name_list.each {|key, value| puts "#{key}, AKA #{value}."}
