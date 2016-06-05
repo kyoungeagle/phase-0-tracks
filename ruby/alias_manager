@@ -15,6 +15,8 @@
 
 #Release 0: Part 2
 
+#Provide a user interface that lets a user enter a name and get a fake name back. Let the user do this repeatedly until they decide to quit by typing 'quit'. 
+
 #User/secret agent types in first and last name
 
 SA_name = ""
@@ -59,3 +61,21 @@ def next_char (x)
 		end
 	end
 end
+
+	array1.map! {|x| next_char(x) }
+	array2.map! {|x| next_char(x) }
+
+#make arrays a string and capitalize the first letter of each string
+
+	array1_join = array1.join('').capitalize
+	array2_join = array2.join('').capitalize
+
+		spy_name = array1_join + ' ' + array2_join
+		puts "Your spy name is #{spy_name}."
+		SA_name_list.store(SA_name, spy_name)
+	end
+
+end
+
+SA_name_list.each {|key, value| puts "#{key}, AKA #{value}."}
+
