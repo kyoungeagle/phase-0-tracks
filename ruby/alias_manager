@@ -19,23 +19,24 @@
 
 #User/secret agent types in first and last name
 
-SA_name = ""
-SA_name_list = {}
-while SA_name != "quit"
-	puts "What's your first and last name? (Type "quit" to exit)."
-	SA_name = gets.chomp
+agent_name = ""
+agent_name_list = {}
+while agent_name != "quit"
+	puts "What's your first and last name? (Type 'quit' to exit)"
+	agent_name = gets.chomp
 
-#SA_name = "Carmen SanDiego"
+#agent_name = "Carmen SanDiego"
 
 #make all letters lowercase
 
-SA_name = SA_name.downcase
+agent_name = agent_name.downcase
 
 # Split the first and last names (strings) into arrays, then the arrays are split into one character per value 
 
-SA_name = SA_name.split(' ')
-array1 = SA_name_array.first.split('')
-array2 = SA_name_array.last.split('')
+agent_name_array = agent_name.split(' ')
+
+array1 = agent_name_array.first.split('')
+array2 = agent_name_array.last.split('')
 
 def next_char (x)
 	case
@@ -51,13 +52,12 @@ def next_char (x)
 		x = 'a'
 	else
 		if x == 'z'
-			x = 'a'
-
-		elseif x.next_char == 'a' || x.next_char == 'e' || x.next_char == 'i' || x.next_char == 'o' || x.next_char == 'u'
-			x.nextchar.nextchar
+				x = 'a'
+		elseif x.next == 'a' || x.next == 'e' || x.next == 'i' || x.next == 'o' || x.next == 'u'
+			x.next.next
 
 		else
-			x.nextchar
+			x.next
 		end
 	end
 end
@@ -67,15 +67,18 @@ end
 
 #make arrays a string and capitalize the first letter of each string
 
-	array1_join = array1.join('').capitalize
-	array2_join = array2.join('').capitalize
+	first_name_join = array1.join('').capitalize
+	last_name_join = array2.join('').capitalize
 
-		spy_name = array1_join + ' ' + array2_join
-		puts "Your spy name is #{spy_name}."
-		SA_name_list.store(SA_name, spy_name)
+		spy_name = first_name_join + ' ' + last_name_join
+		if spy_name == "Raou Raou"
+			puts "Here is your summary of spy names:"
+		else
+			puts "Your spy name is #{spy_name}."
+			agent_name_list.store(agent_name, spy_name)
 	end
 
 end
 
-SA_name_list.each {|key, value| puts "#{key}, AKA #{value}."}
+agent_name_list.each {|key, value| puts "#{key}, AKA #{value}."}
 
