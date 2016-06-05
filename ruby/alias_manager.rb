@@ -19,3 +19,47 @@
 
 #User/secret agent types in first and last name
 
+agent_name = ""
+agent_name_list = {}
+while agent_name != "quit"
+	puts "What's your first and last name? (Type 'quit' to exit)"
+	agent_name = gets.chomp
+
+#agent_name = "Carmen SanDiego"
+
+#make all letters lowercase
+
+agent_name = agent_name.downcase
+
+# Split the first and last names (strings) into arrays, then the arrays are split into one character per value 
+
+agent_name_array = agent_name.split(' ')
+
+array1 = agent_name_array.first.split('')
+array2 = agent_name_array.last.split('')
+
+def next_char (x)
+	case
+	when x == 'a'
+		x = 'e'
+	when x == 'e'
+		x = 'i'
+	when x == 'i'
+		x = 'o'
+	when x == 'o'
+		x = 'u'
+	when x == 'u'
+		x = 'a'
+	else
+		if x == 'z'
+				x = 'a'
+		elseif x.next == 'a' || x.next == 'e' || x.next == 'i' || x.next == 'o' || x.next == 'u'
+			x.next.next
+
+		else
+			x.next
+		end
+	end
+end
+
+	
