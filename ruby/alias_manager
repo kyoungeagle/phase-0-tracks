@@ -1,0 +1,13 @@
+# 5.6 Solo Challenge: Manipulating Strings with Iteration
+
+# Psuedocode of a method that takes a spy's real name and creates a fake name 
+
+
+#1. Have user type in first and last name
+#2. Determine alphabetical characters in first and last name
+#3. Make all letters lowercase
+#4. Split the two names (strings) into two arrays
+#3. Of that list of characters, determine which characters #are vowels (a, e, i, o, u) and which are considered #consonants
+#4. Change all vowels and consonants to become the #following character, respectively (i.e. 'a' becomes 'e,' #'e' becomes 'o', 'f' becomes 'g', etc.) by advancing a #letter by one 
+#5. Swap first and last name
+#6. Present spy with fake name
