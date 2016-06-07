@@ -2,13 +2,18 @@
 
 #Release 3: Use a Hash in a Program
 
+<<<<<<< HEAD
 #1. Upon arrival of website, ask the client to enter the values for the following keys: Name, Age, Number of pets, Number of kids, Decor theme preference, and if this is their first time working with an interior designer (T/F).
+=======
+#1. Upon arrival of website, ask the client to enter the values for the following keys: Name, Age, Number of children, Number of pets, Decor theme preference, and if this is their first time working with an interior designer (T/F).
+>>>>>>> 674123c6bc52e5918f956f244be4a48e81ebc146
 #2. Information provided by user/client should be stored in a hash.
 #3. Provide opportunity for user to update the information.
 #4. If user chooses to update the information, promt them with the field name.
 #5. Make sure information provided is stored in a hash.
 #6. If any strings are entered, convert string to a symbol.
 #7. Print the data to the screen.
+<<<<<<< HEAD
 #8. Exit the program
 
 #Prompt the designer/user for all of this information.
@@ -116,3 +121,17 @@ end
 else 
 	puts "Update complete. You may close the window."
 end
+=======
+#8. Exit the program.
+
+#Prompt the designer/user for all of this information.
+
+#Convert any user input to the appropriate data type.
+
+#Print the hash back out to the screen when the designer has answered all of the questions.
+
+#Give the user the opportunity to update a key 
+
+#Print the latest version of the hash, and exit the program.
+
+>>>>>>> 674123c6bc52e5918f956f244be4a48e81ebc146

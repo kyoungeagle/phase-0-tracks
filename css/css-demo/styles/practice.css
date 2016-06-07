@@ -1,0 +1,24 @@
+section#contact-info{
+	font-size: .8em;
+}
+.job {
+	display: block;
+	background-color: #e9e5dc;
+	width: 80%;
+	padding-left: 30px;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	margin-top: 30px;
+	margin-left: -10px;
+border-top-left-radius: 30px;
+border-top-right-radius: 30px;
+border-bottom-right-radius: 30px;
+border-bottom-left-radius: 30px;
+}
+ul{font-size: .8em;
+}
+
+section#link1:hover {color: hotpink; outline: dashed;
+}
+
+ul>li{color: blue;}
