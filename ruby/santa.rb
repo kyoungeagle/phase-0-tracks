@@ -1,6 +1,6 @@
 class Santa
-	#?attr_reader :ethnicity, :age
-	#?attr_accessor :age
+	attr_reader :reindeer_ranking
+	attr_accessor :ethnicity, :age, :gender:age
 
 	def initialize(gender, ethnicity)
 			@gender = gender
@@ -44,6 +44,8 @@ class Santa
 	#end
 
 end
+	def about_santa
+		puts "Santa idenitfies as #{@gender}, #{@ethnicity}, and is #{age} years old."
 
 
 genders = ["cisgender", "pangender", "transgender", "male", "female", "two-spirit"]
@@ -53,8 +55,12 @@ santas << Santa.new(genders[iteration], ethnicities[iteration])
 
 
 santas = []
+for i in 0..999
+	santas << Santa.new(genders.sample, ethnicities.sample)
+	santas[i].age = rand (140)
+	santas[i].about_santa
 
-santa = Santa.new("","")
+#santa = Santa.new("","")
 #santa.speak
 #santa.eat_milk_and_cookies("sugar cookie")
 #santa.celebrate_birthday
