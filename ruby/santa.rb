@@ -1,6 +1,6 @@
 class Santa
-	attr_reader :reindeer_ranking
-	attr_accessor :ethnicity, :age, :gender:age
+	attr_reader :age
+	attr_accessor :gender
 
 	def initialize(gender, ethnicity)
 			@gender = gender
@@ -14,7 +14,7 @@ class Santa
 	end
 
 	def eat_milk_and_cookies(cookie)
-			puts "That was a good #{cookie}!"
+			puts "Yum! That was a good #{cookie}!"
 	end
 
 	def identity
@@ -34,7 +34,8 @@ class Santa
 		@reindeer_ranking.delete(reindeer)
 		@reindeer_ranking.insert(-1, reindeer)
 	end
-#getter methods
+#IGNORE THIS COMMENTED OUT SECTION
+	#getter methods
 	#def ethnicity
 	#	@ethnicity
 	#end	
@@ -42,27 +43,43 @@ class Santa
 	#def age
 	#	@age
 	#end
+#RELEASE 4
 
+	def kris_kringle_simulator(gender_of_santa, ethnicity_of_santa)
+			gender_of_santa = gender_of_santa.sample
+			ethnicity_of_santa = ethnicity_of_santa.sample
+			random_age = Random.new
+			@age = random_age.rand(140)
+			puts "Santa idenitfies as #{gender_of_santa}, #{ethnicity_of_santa}, and is #{@age} years old"
+	end
 end
-	def about_santa
-		puts "Santa idenitfies as #{@gender}, #{@ethnicity}, and is #{age} years old."
-
 
 genders = ["cisgender", "pangender", "transgender", "male", "female", "two-spirit"]
-ethnicities = ["black", "latino", "white", "Native American", "prefer not to say", "Mystical Creature (red panda)", "N/A"]
-genders.length.times do |iteration|
-santas << Santa.new(genders[iteration], ethnicities[iteration])
+ethnicities = ["black", "latino", "white", "Native American", "prefer not to say", "Mystical Creature (red panda)", "Samoan"]
 
 
 santas = []
-for i in 0..999
-	santas << Santa.new(genders.sample, ethnicities.sample)
-	santas[i].age = rand (140)
-	santas[i].about_santa
 
-#santa = Santa.new("","")
-#santa.speak
-#santa.eat_milk_and_cookies("sugar cookie")
-#santa.celebrate_birthday
-#p santa.age
+santa = Santa.new("","")
+santa.speak
+santa.eat_milk_and_cookies("sugar cookie")
 
+
+puts "Initiate Kris Kringle Simulator"
+genders.length.times do |iteration|
+	santas << Santa.new(genders[iteration], ethnicities[iteration])
+end
+
+santas.each do |santa|
+	santa.identity
+end
+
+santa.celebrate_birthday
+p santa.age
+
+santa.get_mad_at("Rudolph")
+santa.gender=("cisgender")
+
+200.times do
+	p santa.kris_kringle_simulator(genders, ethnicities)
+end
