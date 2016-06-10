@@ -73,7 +73,7 @@ dance_style = ["ballet", "jazz", "modern", "hip-hop", "tap", "tango", "salsa"]
 
 thespians_array = []
 
-2.times do
+50.times do
 
 	actor = Thespian.new 
 	judges_rate=rand(10)
