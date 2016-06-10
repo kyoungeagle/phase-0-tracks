@@ -1,6 +1,5 @@
 class TodoList
-	#attr_reader :list
-	
+
 	def initialize(items)
 		@items = items
 	end
