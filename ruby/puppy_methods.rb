@@ -1,3 +1,5 @@
+#Release 0 & 1
+
 class Puppy
 
   def fetch(toy)
