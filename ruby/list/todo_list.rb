@@ -1,23 +1,22 @@
 class TodoList
-	#attr_reader :list
 	
-	def initialize(items)
-		@items = items
+	def initialize(task)
+		@task = task
 	end
 
 	def get_items
-		@items
+		@task
 	end
 
-	def add_item(z)
-		@items << z
+	def add_item(task)
+		@task << task
 	end
 
-	def delete_item(z)
-		@items.delete(z)
+	def delete_item(task)
+		@task.delete(task)
 	end
 
 	def get_item(n)
-		@items[n]
+		@task[n]
 	end
 end
