@@ -15,7 +15,7 @@
 yogi = []
 
 	def integer(number)
-		while "{number.to_i"!=number
+		while "{number.to_i}"!=number
 			puts "I don't understand. Please write a number between 1 and 10."
 			number = gets.chomp
 		end
@@ -97,8 +97,17 @@ yogi = []
 		puts "You seem like quite the serious yogi! Here's a joke for you: 'how does the hippie respond when you tell him he has to get off your couch?'"
 		response=gets.chomp
 		response=joke(response)
+
+		puts "Are you enlightened?"
+		englightened=gets.chomp
+		while boolean(enlightened)==false
+			puts "Please provide a 'y' or 'n' for your answer, yogi."
+			enlightened=gets.chomp
 	end
 
+	yogi.each do |instance|
+		puts "#{instance.name} in #{instance.location}: age = #{instance.age}, flexibility = #{instance.flexibility}, strength = #{instance.strength}, joke = #{instance.joke}, and enlightenment = #{instance.enlightenment
+	}."
 
 
 		print_items(array)
