@@ -68,3 +68,29 @@ class Thespian
   	end
 
 end
+
+dance_style = ["ballet", "jazz", "modern", "hip-hop", "tap", "tango", "salsa"]
+
+thespians_array = []
+
+50.times do
+
+	actor = Thespian.new 
+	judges_rate=rand(10)
+	actor.pitch(judges_rate)
+	musical_exp=rand(4)
+	actor.experience(musical_exp)
+	movement_style=rand(7)
+	actor.dance(dance_style[movement_style])
+	actor.end_of_show(1)
+	thespians_array << actor
+
+end
+
+thespians_array.each do |actor|
+	actor.pitch(6)
+	actor.experience(2)
+	actor.dance(dance_style[1])
+	actor.end_of_show(2)
+end
+#p thespians_array[12]
