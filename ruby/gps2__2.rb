@@ -34,6 +34,5 @@
 
 # new_list = create_a_list('eggs bread breadedeggs')
 
-
 def grocery_list(items)
 	items_array = items.split(' ')
