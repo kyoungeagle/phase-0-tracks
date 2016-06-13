@@ -56,7 +56,6 @@ $yogi_master = []
 		attr_accessor :age, :strength, :flexibility, :enlightenment
 
 		def initialize(name, age, yoga_pose, strength, flexibility, enlightenment)
-			puts "is this over yet?"
 			@name = name
 			@age = age
 			@yoga_pose = yoga_pose
