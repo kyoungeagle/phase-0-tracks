@@ -32,3 +32,16 @@ describe TodoList do
     expect(list.get_item(0)).to eq "do the dishes"
   end
 end
+
+#STUDY THESE
+#santa problem
+#name incryptor 
+#assessment will include some more of the complex problems
+
+#data types 
+#condition statements
+#and/or modifying thru hashes and array
+
+#control flow (else, if, while, etc)
+
+#classes (attribuets, instances, etc)
