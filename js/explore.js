@@ -3,10 +3,9 @@
 // Pseudocode //
 
 //1. User inputs string of characters to form a word.
-//2. Convert each string to a character array 
-//3. Print characters in reverse
-
-//by using toCharArray
+//2. Convert each string to a character array
+//3. Return new string 
+//4. Print new string (characters in reverse)
 
 function reverse(str) {
   var new_string = "";
