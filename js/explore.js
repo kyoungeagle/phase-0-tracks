@@ -18,4 +18,4 @@ function reverse(str) {
   return new_string;
 }
 
-console.log(reverse("hello world"));
+console.log(reverse("wow phase 0 is almost over!"));
