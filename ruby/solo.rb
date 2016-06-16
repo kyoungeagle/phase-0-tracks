@@ -71,12 +71,12 @@ $yogi_master = []
 		def gain_flexibility
 				@flexibility=+1
 		end
-#
+
 		def master_yoga_pose(new_pose)
 			puts "I can do #{new_pose} now!"
 			@yoga_pose=new_pose
 		end
-#
+
 		def namaste(om)
 			om.times do
 			puts "*** Om ***"
@@ -121,8 +121,8 @@ $yogi_master = []
 		#puts "You seem like quite the serious yogi! Here's a joke for you: 'how does the hippie respond when you tell him he has to get off your couch?'"
 		#response=gets.chomp
 		#response=joke(response)
-		end
-
+		#end
+	end
 		$yogi_master << Yoga_master.new(name, age, yoga_pose, flexibility, strength, enlightenment)
 		$yogi_master.last.enlightenment=enlightenment
 
