@@ -1,7 +1,7 @@
 # Virus Predictor
 
 # I worked on this challenge [by myself with Hannah Y.].
-# We spent [#] hours on this challenge.
+# I spent [2.5] hours on this challenge.
 
 # EXPLANATION OF require_relative
 #
@@ -23,6 +23,7 @@ class VirusPredictor
   #inputs: 0 (because no variable)
   #outputs: 0
   #method should call other methods
+
   def virus_effects
     predicted_deaths(@population_density, @population, @state)
     speed_of_spread(@population_density, @state)
@@ -55,6 +56,7 @@ class VirusPredictor
   #input: two variables: population_density (int), state (str)
   #output: 0, just a message
   #method: calculating spread of disease based on population density variable and speed rate
+  
   def speed_of_spread(population_density, state) #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
@@ -99,3 +101,21 @@ alaska.virus_effects
 
 #=======================================================================
 # Reflection Section
+
+#What are the differences between the two different hash syntaxes shown in the state_data file?
+#State names were written as string, while the two values were symbols
+
+#What does require_relative do? How is it different from require?
+#Require_relative searches the file structure to find the file that you are requiring but it is using the relative path as opposed to the absolute path.
+
+#What are some ways to iterate through a hash?
+# You could use loops such as .each or .map
+
+#When refactoring virus_effects, what stood out to you about the variables, if anything?
+#Population_state and state were repeated. I didn't have time to make it more DRY but if I had had time, I would've condensed them.
+
+#What concept did you most solidify in this challenge?
+#Deeper understanding of identifying syntax
+
+
+
