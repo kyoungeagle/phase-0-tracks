@@ -1,6 +1,6 @@
 # Virus Predictor
 
-# I worked on this challenge [by myself, with: Jen Trudell as a guide].
+# I worked on this challenge [by myself with Hannah Y.].
 # We spent [#] hours on this challenge.
 
 # EXPLANATION OF require_relative
@@ -8,7 +8,11 @@
 #
 require_relative 'state_data'
 
+#require is an "absolute path", uses the search path.
+#require_relative pulls in the data from another file
+
 class VirusPredictor
+
 
   def initialize(state_of_origin, population_density, population)
     @state = state_of_origin
@@ -16,6 +20,9 @@ class VirusPredictor
     @population_density = population_density
   end
 
+  #inputs: 0 (because no variable)
+  #outputs: 0
+  #method should call other methods
   def virus_effects
     predicted_deaths(@population_density, @population, @state)
     speed_of_spread(@population_density, @state)
@@ -23,6 +30,10 @@ class VirusPredictor
 
   private
 
+  #inputs: integers and string for variables
+  #outputs: none, but it's printing a message
+  #method: calculate predicted deaths based on given parameters
+  #floor - converts to integer and rounds down to lowest decimal ** DOUBLE CHECK 
   def predicted_deaths(population_density, population, state)
     # predicted deaths is solely based on population density
     if @population_density >= 200
@@ -41,6 +52,9 @@ class VirusPredictor
 
   end
 
+  #input: two variables: population_density (int), state (str)
+  #output: 0, just a message
+  #method: calculating spread of disease based on population density variable and speed rate
   def speed_of_spread(population_density, state) #in months
     # We are still perfecting our formula here. The speed is also affected
     # by additional factors we haven't added into this functionality.
