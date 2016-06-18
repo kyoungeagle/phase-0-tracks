@@ -17,15 +17,52 @@ for (var i=0; i < colors.length; i++) {
 
 	var currentColor = colors[i];
 	var currentName = horseNames[i];
-	
 	horseColorsAndNames[currentName] = currentColor;
-
 }
 
 console.log(horseColorsAndNames);
 
-//driver code
+//DRIVER CODE
 
 //var horse1 = {name: 'Chip', 'age': 4, gallopsFast: true};
 //horse1.age
 //console.log(horse1['name']);
+
+//RELEASE 2
+//Constructor Function for a Car
+
+function Car(make, model, year) {
+	console.log("Our new car:", this);
+	
+	this.make = make;
+	this.model = model;
+	this.year = year;
+
+	this.speed = function() { console.log("Go Fast!"); };
+	this.oilChange = function() { console.log("Change Oil."); };
+	console.log("CAR INITIALIZATION COMPLETE.");
+}
+
+//DRIVER CODE
+var ourCar = new Car('Tesla', 'model 3', 2016);
+var anotherCar = new Car('Toyota', 'Camry', 2006);
+var yetAnotherCar = new Car('Volkswagen', 'Golf', 2013);
+
+console.log(ourCar);
+ourCar.speed();
+ourCar.oilChange();
+console.log("----")
+
+console.log(anotherCar);
+anotherCar.speed();
+anotherCar.oilChange();
+console.log("----")
+
+console.log(yetAnotherCar);
+yetAnotherCar.speed();
+yetAnotherCar.oilChange();
+console.log("----")
+
+
+
+
