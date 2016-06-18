@@ -64,5 +64,8 @@ yetAnotherCar.oilChange();
 console.log("----")
 
 
+//Release 3
+//use `.push` method to push the variables into an array to 
+//Constructor functions make it easy to create an object, but they pose a challenge if you were to try to loop through the instances.
 
 
