@@ -71,6 +71,25 @@ function getRandInteger(minimum, maximum) {
   return randomString
 }
 
+//3. create the function that takes the input integer and returns array of random words
+
+function manyrandomWords(amount) {
+  var user_array = []
+  for (j = 0; j < amount; j++) {
+      user_array.push(randomWord(getRandInteger(1, 10)))    
+  }
+  return user_array
+}
+
+//4. generate random array 10x; print results
+
+for (a = 0; a < 10; a++ )  {
+    var sample_array = [];
+    sample_array = manyrandomWords(getRandInteger(1,5))
+    console.log(sample_array);
+    console.log(longestPhraseFinder(sample_array))
+}
+
 //Driver Code Release 0 
 //strings(['Ohio', 'California', 'France', 'Kazakstan']);
 
