@@ -48,9 +48,43 @@ function matchObjects(firstObject, secondObject) {
 		return match
 }
 
+//Release 2
 
+//define a function that takes an integer as an input, builds array of length = input with random words as strings
+//the random words should be between 1-10 letters
+//add alphabet string (indexed 0-25)
+//to create each random word we randomly select the length between 1-10, then loop until the length is met selecting a random character from our alphabet array
+//this word is pushed into the newly created return array, and we loop the entire process until the counter = 
+
+//1. define helper function to get random integers between min, max
+function getRandInteger(minimum, maximum) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+ //2. create the function that creates random words of length between 1-10. store them in new variable and returns new variable
+
+ function randomWord(length) {
+  var alphabet = "abcdefghijklmnopqrstuvwxyz";
+  var randomString = "";
+  for (i = 0; i < length; i++) {
+     randomString = randomString + alphabet[getRandInteger(0,25)];
+  }
+  return randomString
+}
 
 //Driver Code Release 0 
-strings(['Ohio', 'California', 'France', 'Kazakstan']);
+//strings(['Ohio', 'California', 'France', 'Kazakstan']);
 
 //Driver Code Release 1
+
+//winner = {name: "Warriors", ranking: 1}
+//loser = {name: "Cavaliers", ranking: 2}
+//console.log("Wow, " + objectMatcher(winner, loser)+looks like you're playing each other in the finals!")
+//match = false
+
+//Driver Code Release 2
+
+for (k = 0; k < 10; k++ )  {
+    var sample_array = [];
+    sample_array = manyrandomWords(getRandInteger(1,5))
+    console.log(sample_array);
+    console.log(longestPhraseFinder(sample_array))
