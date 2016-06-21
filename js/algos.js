@@ -36,10 +36,21 @@ for (var i = 0; i < arrayOfStrings.length; i++){
 //use 'if' to determine if thing1 ==thing2. if true, return true. if false, return false. 
 
 function matchObjects(firstObject, secondObject) {
-
+	var match = false
+	var firstObjectKeys = Object.keys(firstObject)
+		for (var i = 0; i < firstObjectKeys.length; i++) {
+			if (firstObject[firstObjectKeys[i]] == secondObject[firstObjectKeys[i]]) {
+				match = true;
+			} else {
+				match = false;
+			}
+		}
+		return match
 }
 
 
 
-//Driver Code 
+//Driver Code Release 0 
 strings(['Ohio', 'California', 'France', 'Kazakstan']);
+
+//Driver Code Release 1
