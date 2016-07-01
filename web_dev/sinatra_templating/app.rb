@@ -2,7 +2,7 @@
 require 'sinatra'
 require 'sqlite3'
 
-set :public_folder, File.dirname(__FILE__) + '/static'
+set :public_folder, File.dirname(_FILE_) + '/static'
 
 db = SQLite3::Database.new("students.db")
 db.results_as_hash = true
@@ -24,4 +24,16 @@ post '/students' do
   redirect '/'
 end
 
-# add static resources
+get '/students/campus' do
+  erb :campus
+end
+
+post '/campus' do
+  db.execute("INSERT INTO students (name, campus, age) VALUES (?,?,?)", [params['campus']])
+  redirect '/'
+end
+
+#post '/campus' do
+# @students = db.execute("SELECT * FROM students WHERE campus = ?")
+# redirect '/'
+#end
